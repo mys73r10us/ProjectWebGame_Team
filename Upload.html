@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1">
+	<link href="http://fonts.googleapis.com/css?family=Roboto:300,400,700|" rel="stylesheet" type="text/css">
+	<link href="fonts/font-awesome.min.css" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" href="tampilan.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+	<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-beta.2/css/bootstrap.css'>
+	<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/12.1.2/css/intlTelInput.css'>
+	<link rel='stylesheet' href='https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css'>
+	<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/jquery-nice-select/1.1.0/css/nice-select.min.css'>
+	<link rel="stylesheet" href="footer.css">
+	<link rel="stylesheet" href="button.css">
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+	<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+	<div id="site-content">
+		<header class="site-header">
+			<div class="container">
+				<a href="index.html" id="branding">
+					<img src="images/logo.png" alt="" class="logo">
+					<div class="logo-copy">
+						<h1 class="site-title">MINIGAMES ONLINE</h1>
+						<small class="site-description">Everyone Can Play!!!</small>
+					</div>
+				</a> 
+
+				<div class="main-navigation">
+					<button type="button" class="menu-toggle"><i class="fa fa-bars"></i></button>
+					<ul class="menu">
+						<li class="menu-item"><a href="index.html">Home</a></li>
+						<li class="menu-item"><a href="about.html">About</a></li>
+						<li class="menu-item"><a href="review.html">Game Reviews</a></li>
+						<li class="menu-item"><a href="/Login/signin.html">Account</a></li>
+						<li class="menu-item current-menu-item"><a href="Upload.html">Upload Games</a></li>
+					</ul> 
+
+					<form action="#" class="search-form">
+						<input type="text" placeholder="Search...">
+						<button><i class="fa fa-search"></i></button>
+					</form>
+				</div> 
+
+				<div class="mobile-navigation"></div>
+			</div>
+		</header>
+		<main class="main-content">
+			<div class="container">
+				<div class="page">
+					<div class="breadcrumbs">
+						<a href="index.html">Home</a>
+						<span>Upload</span>
+					</div>
+
+					<section class="multi_step_form">
+						<form id="msform">
+							<div class="tittle">
+								<h2>UPLOAD</h2>
+								<p>You have to fill in some documents if you want to upload some games</p>
+							</div>
+							<ul id="progressbar">
+								<li class="active">Data Verify</li>
+								<li>Upload</li>
+								<li>Security Questions</li>
+							</ul>
+							<fieldset>
+								<h3>Input your number</h3>
+								<h6>We will send you a SMS. Input the code to verify.</h6>
+								<div class="form-row">
+									<div class="form-group col-md-6">
+										<input type="tel" id="phone" class="form-control" placeholder="+880">
+									</div>
+									<div class="form-group col-md-6">
+										<input type="text" class="form-control" placeholder="+8801123456789">
+									</div>
+									<div class='main-div'>
+									  <button  class='btn'>Submit</button>
+									</div>
+								</div>
+								<div class="done_text">
+									<a href="#" class="don_icon"><i class="ion-android-done"></i></a>
+									<h6>A secret code is sent to your phone. <br>Please enter it here.</h6>
+								</div>
+								<div class="code_group">
+									<input type="text" class="form-control" placeholder="0">
+									<input type="text" class="form-control" placeholder="0">
+									<input type="text" class="form-control" placeholder="0">
+									<input type="text" class="form-control" placeholder="0">
+								</div>
+								<button type="button" class="next action-button">Continue</button>
+							</fieldset>
+							<fieldset>
+								<h3>Upload your game</h3>
+								<h6>upload in .zip format with contents:</h6>
+								<div class="passport">
+									<h4>1.Html <br>2.Css <br>3.JavaScript</h4>
+									<a href="#" class="don_icon"><i class="ion-android-done"></i></a>
+								</div>
+								<div class="input-group">
+									<div class="custom-file">
+										<input type="file" class="custom-file-input" id="upload">
+										<label class="custom-file-label" for="upload"><i class="ion-android-cloud-outline"></i>Choose file</label>
+									</div>
+								</div>
+								<ul class="file_added">
+									<li>File Added:</li>
+									<li><a href="#"><i class="ion-paperclip"></i>Minecraft.zip</a></li>
+									<li><a href="#"><i class="ion-paperclip"></i>pingpong.zip</a></li>
+								</ul>
+								<button type="button" class="action-button previous previous_button">Back</button>
+								<button type="button" class="next action-button">Continue</button>
+							</fieldset>
+							<fieldset>
+								<h3>Security Questions</h3>
+								<h6>fill in the following questions before you upload the game</h6>
+								<div class="form-group">
+									<select class="product_select">
+										<option data-display="1. Choose A Question">1. Choose A Question</option>
+										<option>2. Choose A Question</option>
+										<option>3. Choose A Question</option>
+									</select>
+								</div>
+								<div class="form-group fg_2">
+									<input type="text" class="form-control" placeholder="Anwser here:">
+								</div>
+								<div class="form-group">
+									<select class="product_select">
+										<option data-display="1. Choose A Question">1. Choose A Question</option>
+										<option>2. Choose A Question</option>
+										<option>3. Choose A Question</option>
+									</select>
+								</div>
+								<div class="form-group fg_3">
+									<input type="text" class="form-control" placeholder="Anwser here:">
+								</div>
+								<button type="button" class="action-button previous previous_button">Back</button>
+								<a href="#" class="action-button">Finish</a>
+							</fieldset>
+						</form>
+				</div> 
+		</main>
+		<footer class="footer">
+			<div class="container">
+				<div class="row">
+					<div class="footer-col">
+						<h4>company</h4>
+						<ul>
+							<li><a href="#">our services</a></li>
+							<li><a href="#">privacy policy</a></li>
+							<li><a href="#">affiliate program</a></li>
+						</ul>
+					</div>
+					<div class="footer-col">
+						<h4>Support</h4>
+						<ul>
+							<li><a href="#">Career Opportunites</a></li>
+							<li><a href="#">FAQ</a></li>
+						</ul>
+					</div>
+					<div class="footer-col">
+						<h4>Redeem Code</h4>
+						<ul>
+							<li><a href="#">Redeem Page</a></li>
+							<li><a href="#">How to Redeem Code</a></li>
+						</ul>
+					</div>
+					<div class="footer-col">
+						<h4>Follow Us</h4>
+						<div class="social-links">
+							<a href="#"><i class="fab fa-facebook-f"></i></a>
+							<a href="#"><i class="fab fa-twitter"></i></a>
+							<a href="#"><i class="fab fa-instagram"></i></a>
+							<a href="#"><i class="fab fa-linkedin-in"></i></a>
+						</div>
+					</div>
+				</div>
+			</div>
+	   </footer>
+	</div>
+
+	<script src="js/jquery-1.11.1.min.js"></script>
+	<script src="http://maps.google.com/maps/api/js?sensor=false&amp;language=en"></script>
+	<script src="js/plugins.js"></script>
+	<script src="js/app.js"></script>
+	<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+	<script src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-beta/js/bootstrap.min.js'></script>
+	<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js'></script>
+	<script src='https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/12.1.2/js/intlTelInput.js'></script>
+	<script src='https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js'></script>
+	<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery-nice-select/1.1.0/js/jquery.nice-select.min.js'></script>
+	<script src="./script.js"></script>
+</body>
+
+</html>
